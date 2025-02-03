@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+</head>
+<body>
+    <header class="header">
+        <a href="{{ url_for('index') }}" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('education') }}">Education</a>
+            <a href="{{ url_for('skills') }}">Skills</a>
+            <a href="{{ url_for('certifications') }}">Certifications</a>
+            <a href="{{ url_for('projects') }}">Projects</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </nav>
+    </header>
+
+    <section id="projects">
+        <div class="projects-container">
+            <!-- Project 1: Dynamic Resume Builder -->
+            <div class="project">
+                <h3>Dynamic Resume Builder</h3>
+                <img src="{{ url_for('static', filename='images/res.jpg')}}" class="rounded-image" height="150px" width="200px">
+                <p>Create and customize resumes dynamically with this web app. It allows users to input their data, which is then displayed in a styled resume format.</p>
+                <a href="https://github.com/naziyanazu786/dynamic-resume-builder" target="_blank">View on GitHub</a>
+            </div>
+    
+            <!-- Project 2: Coffee.co -->
+            <div class="project">
+                <h3>Coffee.co</h3>
+                <img src="{{ url_for('static', filename='images/Coffee lovers.jpg')}}" class="rounded-image" height="150px" width="200px">
+                <p>A sip of warmth, a taste of happiness. Discover the finest coffee blends and aromatic experiences only at COFFEE.CO.</p>
+                <a href="https://github.com/naziyanazu786/coffee.co" target="_blank">View on GitHub</a>
+                <a href="https://coffeeco-lime.vercel.app/">View Project</a>
+            </div>
+    
+            <!-- Project 3: To-Do-List -->
+            <div class="project">
+                <h3>To-Do-List App</h3>
+                <img src="{{ url_for('static', filename='images/do.jpg')}}" class="rounded-image" alt="To-Do List App">
+                <p>A simple and stylish to-do list app that lets you add and delete tasks easily.</p>
+                <div class="project-links">
+                    <a href="https://github.com/naziyanazu786/To-Do-List" target="_blank">
+                        <i class="uil uil-github"></i> View on GitHub
+                    </a>
+                    <a href="https://to-do-list-beta-nine.vercel.app/" target="_blank">View Project</a>
+                </div>
+            </div>
+    
+            <!-- Project 4: Book My Show -->
+            <div class="project">
+                <h3>Movie_Hub</h3>
+                <img src="{{ url_for('static', filename='images/movie.jpg')}}" class="rounded-image" height="150px" width="200px">
+                <p>Book tickets for movies and events with this web application. It allows users to view schedules, pick seats, and make reservations.</p>
+                <a href="https://github.com/naziyanazu786/MovieHub" target="_blank">View on GitHub</a>
+                <a href="https://movie-hub-two-zeta.vercel.app/">View Project</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>You can also find me here:-</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/naziya_naazu786/" target="_blank"><i class="uil uil-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/naziya-shaik-487813280" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+            <a href="https://github.com/naziyanazu786" target="_blank"><i class="uil uil-github"></i></a>
+        </div>
+        <h5>@All rights reserved</h5>
+    </footer>
+</body>
+</html>

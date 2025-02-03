@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+    <header class="header">
+        <a href="{{ url_for('index') }}" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('education') }}">Education</a>
+            <a href="{{ url_for('skills') }}">Skills</a>
+            <a href="{{ url_for('certifications') }}">Certifications</a>
+            <a href="{{ url_for('projects') }}">Projects</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <div class="particles">
+            <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+            <div class="particle" style="left: 20%; animation-delay: 2s;"></div>
+            <div class="particle" style="left: 30%; animation-delay: 4s;"></div>
+            <div class="particle" style="left: 40%; animation-delay: 6s;"></div>
+            <div class="particle" style="left: 50%; animation-delay: 8s;"></div>
+            <div class="particle" style="left: 60%; animation-delay: 10s;"></div>
+            <div class="particle" style="left: 70%; animation-delay: 12s;"></div>
+            <div class="particle" style="left: 80%; animation-delay: 14s;"></div>
+            <div class="particle" style="left: 90%; animation-delay: 16s;"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h1>Contact Me</h1>
+                <h4>Shaik Naziya</h4>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="uil uil-envelope"></i>
+                        <p>Email: naziyashaik0204@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="uil uil-phone"></i>
+                        <p>Phone: +91 9063808125</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="uil uil-location-point"></i>
+                        <p>Location: Vijayawada, India</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>You can also find me here:-</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/naziya_naazu786/" target="_blank"><i class="uil uil-instagram"></i></a>
+            <a href="https://github.com/naziyanazu786" target="_blank"><i class="uil uil-github"></i></a>
+            <a href="https://www.linkedin.com/in/naziya-shaik-487813280" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+        </div>
+        <h5>@All rights reserved</h5>
+    </footer>
+</body>
+</html>

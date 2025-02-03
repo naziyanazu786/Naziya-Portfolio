@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+</head>
+<body>
+    <header class="header">
+        <a href="{{ url_for('index') }}" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('education') }}">Education</a>
+            <a href="{{ url_for('skills') }}">Skills</a>
+            <a href="{{ url_for('certifications') }}">Certifications</a>
+            <a href="{{ url_for('projects') }}">Projects</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="education-horizontal-timeline">
+            <h1>Education</h1>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="single-horizontal-timeline">
+                        <div class="experience-time">
+                            <h2>2022 - 2025</h2>
+                            <h3>Bachelor <span>of </span> computer science</h3>
+                        </div><!--/.experience-time-->
+                        <div class="timeline-horizontal-border">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <span class="single-timeline-horizontal"></span>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-content">
+                                <h4 class="title">
+                                    Krishna University
+                                </h4>
+                                <h5>KBN College, Vijayawada</h5>
+                                <p class="description">
+
+                                </p>
+                            </div><!--/.timeline-content-->
+                        </div><!--/.timeline-->
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="single-horizontal-timeline">
+                        <div class="experience-time">
+                            <h2>2020 - 2022</h2>
+                            <h3>M <span>E</span> C</h3>
+                        </div><!--/.experience-time-->
+                        <div class="timeline-horizontal-border">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <span class="single-timeline-horizontal"></span>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-content">
+                                <h4 class="title">
+                                    Dr.Zakir Hussain College
+                                </h4>
+                                <h5>Sri Sastra College, Vijayawada</h5>
+                                <p class="description">
+                                     
+                                </p>
+                            </div><!--/.timeline-content-->
+                        </div><!--/.timeline-->
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="single-horizontal-timeline">
+                        <div class="experience-time">
+                            <h2>2019 - 2020</h2>
+                            <h3> Tenth</h3>
+                        </div><!--/.experience-time-->
+                        <div class="timeline-horizontal-border">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <span class="single-timeline-horizontal spacial-horizontal-line
+                            "></span>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-content">
+                                <h4 class="title">
+                                    Sri Chaitanya School
+                                </h4>
+                                <h5>Sri Chaitanya School, Vijayawada</h5>
+                                <p class="description">
+                                     
+                                </p>
+                            </div><!--/.timeline-content-->
+                        </div><!--/.timeline-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>You can also find me here:-</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/naziya_naazu786/" target="_blank"><i class="uil uil-instagram"></i></a>
+            <a href="https://github.com/naziyanazu786" target="_blank"><i class="uil uil-github"></i></a>
+            <a href="https://www.linkedin.com/in/naziya-shaik-487813280" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+        </div>
+        <h5>@All rights reserved</h5>
+    </footer>
+</body>
+</html>

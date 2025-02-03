@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <meta name="description" content="Portfolio website of Shaik Naziya - Full Stack Developer and Data Science Enthusiast">
+</head>
+<body>
+    <header class="header">
+        <a href="{{ url_for('index') }}" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('education') }}">Education</a>
+            <a href="{{ url_for('skills') }}">Skills</a>
+            <a href="{{ url_for('certifications') }}">Certifications</a>
+            <a href="{{ url_for('projects') }}">Projects</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, It's Me </h3>
+            <h1>Shaik Naziya</h1>
+            <p>I am a dedicated data science student with a strong foundation in Java and Python.</p>
+            <div class="social-links">
+                <a href="https://github.com/naziyanazu786" target="_blank"><i class="uil uil-github"></i></a>
+                <a href="https://www.linkedin.com/in/naziya-shaik-487813280" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+                <a href="https://www.instagram.com/naziya_naazu786/" target="_blank"><i class="uil uil-instagram"></i></a>
+            </div>
+        </div>
+        <div class="home-image">
+            <img src="{{ url_for('static', filename='images/hijab.jpg')}}" alt="Profile Image" class="rounded-image">
+        </div>
+    </section>
+    
+    <footer>
+        <p>You can also find me here:-</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/naziya_naazu786/" target="_blank"><i class="uil uil-instagram"></i></a>
+            <a href="https://github.com/naziyanazu786" target="_blank"><i class="uil uil-github"></i></a>
+            <a href="https://www.linkedin.com/in/naziya-shaik-487813280" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+        </div>
+        <h5>@All rights reserved</h5>
+    </footer>
+</body>
+</html>

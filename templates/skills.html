@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+</head>
+<body>
+    <header class="header">
+        <a href="{{ url_for('index') }}" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('education') }}">Education</a>
+            <a href="{{ url_for('skills') }}" class="active">Skills</a>
+            <a href="{{ url_for('certifications') }}">Certifications</a>
+            <a href="{{ url_for('projects') }}">Projects</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </nav>
+    </header>
+    
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <p>
+                    <i class="uil uil-python skill-icon"></i> Python
+                </p>
+                <div class="skill-bar python" data-percent="90%"></div>
+            </div>
+        
+            <div class="skill">
+                <p>
+                    <i class="uil uil-html5 skill-icon"></i> HTML
+                </p>
+                <div class="skill-bar html" data-percent="80%"></div>
+            </div>
+        
+            <div class="skill">
+                <p>
+                    <i class="uil uil-database skill-icon"></i> SQL
+                </p>
+                <div class="skill-bar sql" data-percent="70%"></div>
+            </div>
+        
+            <div class="skill">
+                <p>
+                    <i class="uil uil-css3-simple skill-icon"></i> CSS
+                </p>
+                <div class="skill-bar css" data-percent="70%"></div>
+            </div>
+        
+            <div class="skill">
+                <p>
+                    <i class="uil uil-java-script skill-icon"></i> JavaScript
+                </p>
+                <div class="skill-bar javascript" data-percent="60%"></div>
+            </div>
+        </div>
+        
+        
+    </section>
+    
+    <footer>
+        <p>You can also find me here:-</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/naziya_naazu786/" target="_blank"><i class="uil uil-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/naziya-shaik-487813280" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+            <a href="https://github.com/naziyanazu786" target="_blank"><i class="uil uil-github"></i></a>
+        </div>
+        <h5>@All rights reserved</h5>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
