@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-        <a href="{{ url_for('index') }}" class="logo">Portfolio</a>
+        <a href="{{ url_for('index') }}" class="logo">SN</a>
         <nav class="navbar">
             <a href="{{ url_for('index') }}">Home</a>
             <a href="{{ url_for('about') }}">About</a>
@@ -23,12 +23,13 @@
     </header>
     <section class="about" id="about">
         <div class="about-img">
-            <img src="{{ url_for('static', filename='images/shaik.png')}}" alt="Profile Image" class="rounded-image">
+            <img src="{{ url_for('static', filename='images/naz.jpg')}}" alt="Profile Image" class="rounded-image">
         </div>
         <div class="about-text">
             <h2>About<span>Me</span></h2>
-            <h4>Full Stack Developer!</h4>
-            <p>As a dedicated and aspiring data science student, I am passionate about leveraging my strong foundation in computer science and programming to develop innovative solutions that address real-world problems.</p>
+            <h4>I am SHAIK NAZIYA</h4>
+            <p>a B.Sc. Data Science student at KBN College, Vijayawada, with a strong academic background and a CGPA of 8.5/10. I have a passion for programming and have developed skills in Python, Java, C, and SQL. I have experience in frontend technologies like HTML, CSS, and JavaScript, and have worked on various projects, including developing a medical AI tool (Histo_Bot) and a user-friendly job application form. I am the Team Leader of the Data Science Team at KBN College and have a track record of success in competitions, including first and second-place prizes. I have participated in NSS and organized cultural events. My certifications include IBM's Python for Data Science and AI in Practice, and I am always eager to enhance my skills. I recently completed an internship with PacketPrep and scored 70.73% in the TCS NQT.<br>
+                As a dedicated and aspiring data science student, I am passionate about leveraging my strong foundation in computer science and programming to develop innovative solutions that address real-world problems.</p>
             <a href="{{ url_for('static', filename='images/Naziya Resume.pdf')}}" class="btn-box" target="_blank">More About Me</a>
         </div>
     </section>
