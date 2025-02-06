@@ -54,6 +54,13 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   var typed = new Typed(".text", options);
+  var typed = new Typed('.typed-text', {
+            strings: ['Shaik Naziya', 'a Full Stack Developer', 'a Data Science Enthusiast'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 1000,
+            loop: true
+        });
 
   // Get current page URL
   const currentLocation = window.location.pathname;
