@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-        <a href="{{ url_for('index') }}" class="logo">Portfolio</a>
+        <a href="{{ url_for('index') }}" class="logo">SN</a>
         <nav class="navbar">
             <a href="{{ url_for('index') }}">Home</a>
             <a href="{{ url_for('about') }}">About</a>
@@ -55,7 +55,13 @@
             </div>
             
             <div class="contact-form">
-                <form>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Web3Forms Access Key -->
+                    <input type="hidden" name="access_key" value="5665066f-8f8f-4e0a-b320-74e1f78fc93a">
+                    
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                     <div class="form-group">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
